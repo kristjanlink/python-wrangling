@@ -1,7 +1,7 @@
 # python-wrangling
 Python code portfolio
 
-# process-icons.py
+## process-icons.py
 
 This script:
 - Opens all files in subdirectory "images"
@@ -10,7 +10,7 @@ This script:
 - Converts them to JPEG format
 - Saves them to "/opt/icons/"
 
-# post-to-django.py
+## post-to-django.py
 
 This script:
 - Iterates through a directory of text files with 4 rows
