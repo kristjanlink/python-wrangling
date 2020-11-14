@@ -15,10 +15,10 @@ This script:
 This script:
 - Iterates through a directory of text files with 4 rows
 - Adds each row to a dictionary with the following keys, respectively:
- * "title"
- * "name"
- * "date"
- * "feedback"
+  * "title"
+  * "name"
+  * "date"
+  * "feedback"
 - Adds each dictionary to a list
 - Iterates through the list of dictionaries
 - Posts each dictionary to a Django page using the requests module
