@@ -29,7 +29,7 @@ def run():
         i = 0
         dicts_count = len(reviews_dicts_list)
         for dict in reviews_dicts_list:
-                i +=1
+                i += 1
                 response = requests.post("http://<Django web server IP>/feedback/", data = dict)  # DON'T FORGET THE SLASH AT THE END!!!
                 print("Processing review {} of {},  Status code: {}".format(i, dicts_count, response.status_code))
 
