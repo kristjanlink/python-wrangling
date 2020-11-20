@@ -26,6 +26,6 @@ This script:
 ## cars.py
 
 This script:
-- Uses emails.py
 - Uses reports.py
+- Uses emails.py
 - Uses car_sales.json
