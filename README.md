@@ -22,3 +22,10 @@ This script:
 - Adds each dictionary to a list
 - Iterates through the list of dictionaries
 - Posts each dictionary to a Django page using the requests module
+
+## cars.py
+
+This script:
+- Uses emails.py
+- Uses reports.py
+- Uses car_sales.json
