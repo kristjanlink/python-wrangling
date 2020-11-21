@@ -4,7 +4,7 @@ import os
 from PIL import Image
 
 def process_icons():
-	"""Rotates images 90 degrees clockwise, resizes them to 128 x 128 and saves tham in *.jpeg format."""
+	"""Rotates images 90 degrees clockwise, resizes them to 128 x 128 and saves them in *.jpeg format."""
 
 	for image in os.listdir("images"):
 		if not image.startswith('.'): # To skip system files such as ".DS_Store"
