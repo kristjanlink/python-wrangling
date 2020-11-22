@@ -42,7 +42,8 @@ def main():
         if not check(): # If a check fails
             message = emails.generate_error_report(
                 "automation@example.com",
-                "{}@example.com".format(os.environ.get('USER')), # This is why import os was needed if you're wondering!
+                # For the cron job at Coursera, hard-coding the email was the answer
+                "{}@example.com".format(os.environ.get('USER')),
                 check_subj_dict[check], # Get the subject that corresponds to the function
                 "Please check your system and resolve the issue as soon as possible."
             )
