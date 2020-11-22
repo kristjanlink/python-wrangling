@@ -100,12 +100,13 @@ def main(argv):
   report_pie = Pie(width = 3, height = 3)
   report_pie.data = []
   #report_pie.labels = [] # It's dense enough without the labels
+  report_path = "/tmp/cars.pdf"
   for item in car_table[1:]:
     report_pie.data.append(item[3])
     #report_pie.labels.append(item[1]) # It's dense enough without the labels
   report_chart = Drawing()
   report_chart.add(report_pie)
-  reports.generate("/tmp/cars.pdf", "Sales summary for last month", summary_paragraph, report_chart, car_table)
+  reports.generate(report_path, "Sales summary for last month", summary_paragraph, report_chart, car_table)
 
   # Send the PDF report as an email attachment
   message = emails.generate(
@@ -113,7 +114,7 @@ def main(argv):
                            "{}@example.com".format(os.environ.get('USER')),
                            "Sales summary for last month",
                            summary_paragraph.replace("<br/>", "\n"), # Instead of calling summary[0:3] one by one again
-                           "/tmp/cars.pdf"
+                           report_path
                            )
   emails.send(message)
 # My code ends here #^^^#############################################
