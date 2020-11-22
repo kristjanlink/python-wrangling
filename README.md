@@ -29,3 +29,12 @@ This script:
 - Uses reports.py
 - Uses emails.py
 - Uses car_sales.json
+
+## coursera-python-automation-final-project
+
+Contains scripts that:
+- Summarize and process sales data into different categories
+- Generate a PDF (artifact included)
+- Automatically send the PDF by email
+- Check the health status of the system
+- Send an email if the system has problems
